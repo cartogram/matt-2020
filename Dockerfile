@@ -14,6 +14,6 @@ ADD . /var/www/app
 
 RUN yarn run build
 
-EXPOSE 4000
+EXPOSE 3000
 
 CMD ["next", "start"]
