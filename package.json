@@ -7,7 +7,6 @@
     "dev": "NODE_OPTIONS='--inspect=0.0.0.0' next",
     "build": "next build",
     "start": "next start",
-    "storybook": "start-storybook --port 6006 --config-dir .storybook --quiet",
     "test:unit": "jest"
   },
   "author": "",
