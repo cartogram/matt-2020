@@ -1,5 +1,4 @@
 FROM node:lts-jessie
-ENV NODE_ENV=production
 ENV PATH $PATH:/var/www/app/node_modules/.bin
 
 # Set the work directory
@@ -8,12 +7,12 @@ WORKDIR /var/www/app
 
 # Add our package.json and install *before* adding our application files
 ADD package.json ./
-RUN npm i --production
+RUN yarn
 
 # Add application files
 ADD . /var/www/app
 
-RUN npm run build
+RUN yarn run build
 
 EXPOSE 4000
 
